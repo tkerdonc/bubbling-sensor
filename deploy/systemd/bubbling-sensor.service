@@ -1,0 +1,11 @@
+[Unit]
+Description=Brouij bubbling sensor
+Wants=network.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+WorkingDirectory=/home/pi/src/bubbling-sensor
+ExecStart=/home/pi/src/bubbling-sensor/bubbles.py
+Restart=always
