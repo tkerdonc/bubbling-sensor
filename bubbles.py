@@ -38,7 +38,7 @@ try:
                         "fields": {
                             "value": 1,
                         },
-                        "time": datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%f'[:-3])
+                        "time": datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%f')
                     }]
                 }
                 client.send_packet(json_body)
